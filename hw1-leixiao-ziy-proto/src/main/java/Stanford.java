@@ -14,11 +14,11 @@ import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
 
-public class PosTagNamedEntityRecognizer {
+public class Stanford {
 
   private StanfordCoreNLP pipeline;
 
-  public PosTagNamedEntityRecognizer() throws ResourceInitializationException {
+  public Stanford () throws ResourceInitializationException {
     Properties props = new Properties();
     props.put("annotators", "tokenize, ssplit, pos");
     pipeline = new StanfordCoreNLP(props);

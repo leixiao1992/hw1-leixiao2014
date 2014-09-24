@@ -36,9 +36,9 @@ public class GeneNameAnnotator extends JCasAnnotator_ImplBase {
 	    	String docText = a.getSentenceText();
 	    	
 	    	//use the function of the PosTagNamedEntityRecognizer.java
-	    	PosTagNamedEntityRecognizer recognizer = null;
+	    	Stanford  recognizer = null;
 			try {
-				recognizer = new PosTagNamedEntityRecognizer();
+				recognizer = new Stanford ();
 			} catch (ResourceInitializationException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
